@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+
+body {
+  @apply m-0 p-0;
+  @apply w-full h-screen;
+  /* @apply bg-gray-700; */
+  overscroll-behavior: none;
+}
+
+canvas {
+  @apply w-full h-screen outline-none block;
+}
+
+a {
+  @apply text-gray-800 text-lg;
+}
+
+a,
+button,
+input,
+select {
+  pointer-events: auto;
+}
+
+.center-children {
+  @apply flex justify-center items-center;
+}
+
+.card {
+  @apply flex justify-center items-center h-10 w-auto bg-gray-400 text-gray-900 rounded shadow-lg shadow-inner my-8 mr-8 px-8 py-8;
+}
+
+.grow {
+  @apply transition duration-200 ease-in-out;
+}
+
+.grow:hover {
+  @apply shadow-2xl transform -translate-y-1 scale-110;
+}
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
